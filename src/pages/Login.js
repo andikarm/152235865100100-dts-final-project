@@ -25,7 +25,7 @@ const Login = () => {
 		<section className="section-formauth">
 			<div className="formauth">
 				<div className="box-formauth">
-					<h1>Sign in</h1>
+					<h1>Sign In</h1>
 					{errorMessage && (
 						<span className="info_form error">{errorMessage}</span>
 					)}

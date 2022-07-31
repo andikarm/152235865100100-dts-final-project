@@ -8,6 +8,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Popular from "./pages/Popular";
 import Favorites from "./pages/Favorites";
+import Contact from "./pages/Contact";
 import Details from "./pages/Details";
 import NotFound from "./pages/NotFound";
 
@@ -34,6 +35,7 @@ function App() {
 				/>
 				<Route path="popular" element={<Popular />} />
 				<Route path="favorites" element={<Favorites />} />
+				<Route path="contact" element={<Contact />} />
 				<Route
 					path="games/:id"
 					element={

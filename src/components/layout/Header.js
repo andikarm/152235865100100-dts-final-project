@@ -58,6 +58,14 @@ const Header = () => {
 								Favorites
 							</NavLink>
 						</li>
+						<li>
+							<NavLink
+								to="contact"
+								style={({ isActive }) => (isActive ? activeStyle : undefined)}
+							>
+								Contact Us
+							</NavLink>
+						</li>
 						{!user ? (
 							<li>
 								<NavLink

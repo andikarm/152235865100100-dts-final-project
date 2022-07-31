@@ -92,7 +92,8 @@ a {
   margin-bottom: 2rem;
 }
 
-.form-wrapper input {
+.form-wrapper input,
+.form-wrapper textarea {
   width: 100%;
   padding: 1rem;
   border-radius: 5px;
@@ -105,12 +106,18 @@ a {
   font-size: 1.5rem;
 }
 
-.form-wrapper input:focus {
+.form-wrapper textarea {
+  height: 120px;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
   outline: none;
   background-color: #181a1d;
 }
 
-.form-wrapper input::placeholder {
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder {
   color: #929292;
 }
 
