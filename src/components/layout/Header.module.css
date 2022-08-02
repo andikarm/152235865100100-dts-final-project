@@ -26,7 +26,7 @@
   color: #fff;
 }
 
-.logo {
+.header .logo {
   font-size: 4rem;
   fill: #eeeeee;
   margin-right: 1rem;
@@ -62,6 +62,18 @@
 }
 
 @media screen and (max-width: 576px) {
+  .header {
+    min-height: 60px;
+  }
+
+  .header .container>a {
+    font-size: 2.5rem;
+  }
+
+  .header .logo {
+    font-size: 3.5rem;
+  }
+
   .header .container {
     justify-content: center;
   }
