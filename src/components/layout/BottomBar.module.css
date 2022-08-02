@@ -23,6 +23,19 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.navigation button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-secondary);
+  cursor: pointer;
+}
+
 .navigation a:hover,
 .navigation a.active {
   color: #fff;

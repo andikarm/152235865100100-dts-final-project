@@ -62,7 +62,11 @@
 }
 
 @media screen and (max-width: 576px) {
-  .header {
+  .header .container {
+    justify-content: center;
+  }
+
+  .header .navigation {
     display: none;
   }
 }
