@@ -22,7 +22,16 @@ const Signup = () => {
 			console.log(user);
 			navigate("/login");
 		} catch (error) {
-			setErrorMessage(error.message);
+			setErrorMessage(
+				error.message
+					.replace(/-/g, " ")
+					.replace("(", "")
+					.replace(")", "")
+					.replace(".", "")
+					.replace(/Firebase:/g, "")
+					.replace(/Error/g, "")
+					.replace("auth/", "")
+			);
 		}
 	};
 

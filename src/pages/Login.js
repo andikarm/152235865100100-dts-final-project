@@ -17,7 +17,16 @@ const Login = () => {
 			await signInWithEmailAndPassword(auth, email, password);
 			navigate("/");
 		} catch (error) {
-			setErrorMessage(error.message);
+			setErrorMessage(
+				error.message
+					.replace(/-/g, " ")
+					.replace("(", "")
+					.replace(")", "")
+					.replace(".", "")
+					.replace(/Firebase:/g, "")
+					.replace(/Error/g, "")
+					.replace("auth/", "")
+			);
 		}
 	};
 
@@ -27,7 +36,7 @@ const Login = () => {
 				<div className="box-formauth">
 					<h1>Sign In</h1>
 					{errorMessage && (
-						<span className="info_form error">{errorMessage}</span>
+						<span className="info-form error">{errorMessage}</span>
 					)}
 					<form className="form-wrapper" onSubmit={handleSubmit}>
 						<div className="form-field">
